@@ -1,9 +1,9 @@
 import '@/App.css'
-import LoginForm from '@/components/LoginForm'
+import Registration from '@/pages/Registration'
 
 function App() {
   return (
-    <LoginForm />
+    <Registration />
   )
 }
 
