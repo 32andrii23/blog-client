@@ -1,11 +1,11 @@
-import LoginForm from "@/components/LoginForm"
+import LogInForm from "@/components/LogInForm"
 
-const Login = () => {
+const LogIn = () => {
     return (
         <main className="h-screen bg-gray-100 flex-center flex-col gap-2 px-4">
-            <LoginForm />
+            <LogInForm />
         </main>
     )
 }
 
-export default Login;
+export default LogIn;

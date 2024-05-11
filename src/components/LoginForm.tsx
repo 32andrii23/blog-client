@@ -32,7 +32,7 @@ const formSchema = z.object({
 })
 
 
-export default function LoginForm() {
+export default function LogInForm() {
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
         defaultValues: {
@@ -109,9 +109,9 @@ export default function LoginForm() {
                 Don't have an account?
                 <Link
                     className="ml-1 font-medium text-sm hover:underline"
-                    to="/register"
+                    to="/sign-up"
                 >
-                    Register
+                    Sign up
                 </Link>
             </div>
         </>

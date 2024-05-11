@@ -39,7 +39,7 @@ const formSchema = z.object({
 })
 
 
-export default function LoginForm() {
+export default function SignUpForm() {
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
         defaultValues: {
@@ -110,15 +110,17 @@ export default function LoginForm() {
                                 control={form.control}
                                 name="terms"
                                 render={({ field }) => (
-                                    <FormItem className="space-x-2 flex items-center">
-                                        <FormControl>
-                                            <Checkbox
-                                                checked={field.value}
-                                                onCheckedChange={field.onChange}
-                                                className="self-end"
-                                            />
-                                        </FormControl>
-                                        <FormLabel>I agree to the terms and conditions</FormLabel>
+                                    <FormItem>
+                                        <div className="space-x-2 flex items-center">
+                                            <FormControl>
+                                                <Checkbox
+                                                    checked={field.value}
+                                                    onCheckedChange={field.onChange}
+                                                    className="self-end"
+                                                />
+                                            </FormControl>
+                                            <FormLabel>I agree to the terms and conditions</FormLabel>
+                                        </div>
                                         <FormMessage />
                                     </FormItem>
                                 )}
@@ -129,7 +131,7 @@ export default function LoginForm() {
                                 type="submit"
                                 className="w-full"
                             >
-                                Login
+                                Sing up
                             </Button>
                         </CardFooter>
                     </form>
