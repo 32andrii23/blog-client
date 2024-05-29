@@ -1,19 +1,16 @@
-import { Route, Routes } from 'react-router-dom'
+import { Route, Routes } from "react-router-dom";
 
-import '@/App.css'
-import { 
-  LogIn, 
-  SignUp, 
-  Features } from '@/pages'
+import "@/App.css";
+import { LogIn, SignUp, Home } from "@/pages";
 
 function App() {
   return (
     <Routes>
-      <Route path="/features" element={<Features />} />
+      <Route path="/" element={<Home />} />
       <Route path="/sign-up" element={<SignUp />} />
       <Route path="/log-in" element={<LogIn />} />
     </Routes>
-  )
+  );
 }
 
-export default App
+export default App;

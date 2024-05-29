@@ -1,9 +1,9 @@
 import LogIn from "./LogIn";
 import SignUp from "./SignUp";
-import Features from "./Features";
+import Home from "./Home";
 
 export { 
     LogIn, 
     SignUp, 
-    Features 
+    Home 
 };

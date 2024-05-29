@@ -78,14 +78,14 @@
 
 @layer utilities {
   .flex-center {
-    display: flex;
-    justify-content: center; 
-    align-items: center;    
+    @apply flex justify-center items-center;  
   }
 
   .flex-between {
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;    
+    @apply flex justify-between items-center;   
+  }
+
+  .container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
 }
