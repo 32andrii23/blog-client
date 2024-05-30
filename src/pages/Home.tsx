@@ -3,7 +3,7 @@ import { useRef } from "react";
 
 import { Button } from "@/components/ui/button";
 
-const Features = [
+const features = [
   {
     name: "Content Management",
     description:
@@ -76,7 +76,7 @@ const Home = () => {
             Features
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-            {Features.map((feature) => (
+            {features.map((feature) => (
               <div
                 key={feature.name}
                 className="flex flex-col items-center space-y-2 border border-gray-500 rounded-xl py-4 px-8"
